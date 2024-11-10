@@ -1,6 +1,8 @@
 using System.Text.Unicode;
 using api.Data;
+using api.Interfaces;
 using api.Models;
+using api.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -93,6 +95,7 @@ builder.Services.AddDbContext<ApplicationDBContext>(options => {
 // });
 
 // Thêm kho lưu trữ, thêm nội dung phụ thuộc vào dự án (DI)
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 
 var app = builder.Build();
 
