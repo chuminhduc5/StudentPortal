@@ -9,6 +9,7 @@ namespace api.Dtos.Student
     public class CreateStudentRequestDto
     {
         public string StudentCode { get; set; }
+        public string StudentName { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Gender { get; set; } 
         public string Nationality { get; set; }

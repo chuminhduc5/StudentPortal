@@ -15,6 +15,7 @@ namespace api.Mappers
             {
                 StudentId = studentModel.StudentId,
                 StudentCode = studentModel.StudentCode,
+                StudentName = studentModel.StudentName,
                 DateOfBirth = studentModel.DateOfBirth,
                 Gender = studentModel.Gender,
                 Nationality = studentModel.Nationality,
@@ -35,6 +36,7 @@ namespace api.Mappers
             return new Student 
             {
                 StudentCode = studentDto.StudentCode,
+                StudentName = studentDto.StudentName,
                 DateOfBirth = studentDto.DateOfBirth,
                 Gender = studentDto.Gender,
                 Nationality = studentDto.Nationality,
