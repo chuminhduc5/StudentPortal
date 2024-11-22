@@ -57,6 +57,7 @@ namespace api.Repository
             }
             
             existingStudent.StudentCode = studentDto.StudentCode;
+            existingStudent.StudentName = studentDto.StudentName;
             existingStudent.DateOfBirth = studentDto.DateOfBirth;
             existingStudent.Gender = studentDto.Gender;
             existingStudent.Nationality = studentDto.Nationality;
